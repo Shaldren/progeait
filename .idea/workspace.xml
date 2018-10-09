@@ -125,7 +125,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539071289393" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539078432253" />
     <property name="last_opened_file_path" value="C:/Program Files (x86)/Microsoft Visual Studio 14.0/Common7/IDE/Extensions/Microsoft/Web Tools/External/git/git.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -163,15 +163,15 @@
       <option name="presentableId" value="Default" />
       <updated>1538991156318</updated>
       <workItem from="1538991170250" duration="3852000" />
-      <workItem from="1539070206767" duration="1201000" />
+      <workItem from="1539070206767" duration="1781000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5053000" />
+    <option name="totallyTimeSpent" value="5633000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="7" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24676375" />
