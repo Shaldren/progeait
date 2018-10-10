@@ -1,4 +1,6 @@
 package dal.dao;
 
-public interface UtilisateursDAO {
+import bo.Utilisateurs;
+
+public interface UtilisateursDAO extends GenericDAO<Utilisateurs,Integer> {
 }

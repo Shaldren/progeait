@@ -1,4 +1,6 @@
 package dal.dao;
 
-public interface TestsDAO {
+import bo.Tests;
+
+public interface TestsDAO extends GenericDAO<Tests,Integer> {
 }

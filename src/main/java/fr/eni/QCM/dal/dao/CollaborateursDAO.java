@@ -1,4 +1,6 @@
 package dal.dao;
 
-public interface CollaborateursDAO {
+import bo.Collaborateurs;
+
+public interface CollaborateursDAO extends GenericDAO<Collaborateurs,Integer> {
 }

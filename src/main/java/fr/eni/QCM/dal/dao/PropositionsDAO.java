@@ -1,4 +1,6 @@
 package dal.dao;
 
-public interface PropositionsDAO {
+import bo.Propositions;
+
+public interface PropositionsDAO extends GenericDAO<Propositions,Integer> {
 }

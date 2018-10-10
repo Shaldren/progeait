@@ -1,4 +1,6 @@
 package dal.dao;
 
-public interface Questions_TirageDAO {
+import bo.Questions_Tirage;
+
+public interface Questions_TirageDAO  extends GenericDAO<Questions_Tirage,Integer> {
 }

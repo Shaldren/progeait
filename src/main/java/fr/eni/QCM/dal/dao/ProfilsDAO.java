@@ -1,4 +1,6 @@
 package dal.dao;
 
-public interface ProfilsDAO {
+import bo.Profils;
+
+public interface ProfilsDAO extends GenericDAO<Profils,Integer>{
 }
