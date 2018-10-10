@@ -2,7 +2,7 @@ package main.java.fr.eni.QCM.main.bo;
 
 import java.io.Serializable;
 
-public class Question_tirage implements Serializable {
+public class Questions_Tirage implements Serializable {
 
     private int idQuestionTirage;
 
@@ -10,10 +10,10 @@ public class Question_tirage implements Serializable {
 
     private int numOrdre;
 
-    public Question_tirage() {
+    public Questions_Tirage() {
     }
 
-    public Question_tirage(int idQuestionTirage, boolean estMarquee, int numOrdre) {
+    public Questions_Tirage(int idQuestionTirage, boolean estMarquee, int numOrdre) {
         this.idQuestionTirage = idQuestionTirage;
         this.estMarquee = estMarquee;
         this.numOrdre = numOrdre;
