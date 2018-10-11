@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" build-on-make="true" name="QCM">
+    <output-path>$PROJECT_DIR$/classes/artifacts/QCM</output-path>
+    <root id="root">
+      <element id="directory" name="lib">
+        <element id="archive" name="progeait.jar" />
+      </element>
+      <element id="module-output" name="progeait" />
+    </root>
+  </artifact>
+</component>

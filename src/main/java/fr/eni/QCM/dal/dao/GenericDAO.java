@@ -1,9 +1,9 @@
 package dal.dao;
 
+import dal.exception.DaoException;
+
 import java.util.List;
 
-import dal.exception.DaoException;
-import main.java.fr.eni.QCM.dal.exception.DaoException;
 /**
  * Generic DAO for the basic current usages of specific DAO.
  * 

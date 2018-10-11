@@ -1,7 +1,6 @@
 package dal.dao.impl;
 
 import bo.Propositions;
-import bo.Tests;
 import dal.dao.PromotionsDAO;
 import dal.exception.DaoException;
 import fr.eni.tp.web.common.dal.factory.MSSQLConnectionFactory;

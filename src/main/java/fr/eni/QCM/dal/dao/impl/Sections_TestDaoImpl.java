@@ -1,6 +1,5 @@
 package dal.dao.impl;
 
-import bo.Epreuves;
 import bo.Sections_Test;
 import dal.dao.Sections_TestDAO;
 import dal.exception.DaoException;
