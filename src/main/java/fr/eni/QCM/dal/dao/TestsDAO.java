@@ -1,6 +1,7 @@
 package dal.dao;
 
 import bo.Tests;
+import dal.exception.DaoException;
 
 public interface TestsDAO extends GenericDAO<Tests,Integer> {
 
