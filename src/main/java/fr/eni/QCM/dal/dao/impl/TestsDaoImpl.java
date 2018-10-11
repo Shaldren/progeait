@@ -11,6 +11,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class TestsDaoImpl implements TestsDAO {
@@ -65,7 +66,7 @@ public class TestsDaoImpl implements TestsDAO {
             resultSet = statement.executeQuery();
 
             while (resultSet.next()) {
-                note = resultSetToNote(resultSet);
+                test = resultSetToTest(resultSet);
             }
         } catch(SQLException e) {
             throw new DaoException(e.getMessage(), e);
@@ -89,7 +90,7 @@ public class TestsDaoImpl implements TestsDAO {
             resultSet = statement.executeQuery(SELECT_ALL_TESTS_QUERY);
 
             while (resultSet.next()) {
-                list.add(resultSetToNote(resultSet));
+                list.add(resultSetToTest(resultSet));
             }
         } catch(SQLException e) {
             throw new DaoException(e.getMessage(), e);
@@ -115,7 +116,7 @@ public class TestsDaoImpl implements TestsDAO {
             resultSet = statement.executeQuery();
 
             while (resultSet.next()) {
-                note = resultSetToNote(resultSet);
+                test = resultSetToTest(resultSet);
             }
         } catch(SQLException e) {
             throw new DaoException(e.getMessage(), e);
@@ -124,5 +125,19 @@ public class TestsDaoImpl implements TestsDAO {
         }
         
         return test;
+    }
+    
+    private Tests resultSetToTest(ResultSet resultSet) throws SQLException {
+        
+        Tests test = new Tests();
+        test.setId(resultSet.getInt("test_id"));
+        test.setLibelle(resultSet.getString("test_libelle"));
+        test.setDescription(resultSet.getString("test_description"));
+        test.setDuree(resultSet.getTime("test_duree"));
+        test.setSeuil_haut(resultSet.getFloat("test_seuil_haut"));
+        test.setSeuil_bas(resultSet.getFloat("test_seuil_bas"));
+        
+        return test;
+        
     }
 }
