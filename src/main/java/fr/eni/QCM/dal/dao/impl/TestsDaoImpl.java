@@ -3,6 +3,8 @@ package dal.dao.impl;
 import bo.Tests;
 import dal.dao.TestsDAO;
 import dal.exception.DaoException;
+import fr.eni.tp.web.common.dal.factory.MSSQLConnectionFactory;
+import fr.eni.tp.web.common.util.ResourceUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -102,7 +104,7 @@ public class TestsDaoImpl implements TestsDAO {
     }
     
     @Override
-    public Tests selectByDescription(String libelle) throws DaoException {
+    public Tests selectByLibelle(String libelle) throws DaoException {
     	Connection connection = null;
         PreparedStatement statement = null;
         ResultSet resultSet = null;
@@ -130,7 +132,7 @@ public class TestsDaoImpl implements TestsDAO {
     private Tests resultSetToTest(ResultSet resultSet) throws SQLException {
         
         Tests test = new Tests();
-        test.setId(resultSet.getInt("test_id"));
+        test.setIdTest(resultSet.getInt("test_id"));
         test.setLibelle(resultSet.getString("test_libelle"));
         test.setDescription(resultSet.getString("test_description"));
         test.setDuree(resultSet.getTime("test_duree"));
