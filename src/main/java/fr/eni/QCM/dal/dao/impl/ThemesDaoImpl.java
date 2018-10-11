@@ -25,7 +25,7 @@ public class ThemesDaoImpl implements ThemesDAO {
 
     @Override
     public Themes insert(Themes element) throws DaoException {
-
+        return null;
     }
 
     @Override

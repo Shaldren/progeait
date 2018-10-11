@@ -40,7 +40,7 @@ public class TestsDaoImpl implements TestsDAO {
     
     @Override
     public Tests insert(Tests element) throws DaoException {
-    	//NOPE
+    	return null;
     }
 
     @Override

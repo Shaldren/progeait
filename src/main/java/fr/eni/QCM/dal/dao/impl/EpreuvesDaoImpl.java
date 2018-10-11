@@ -13,8 +13,8 @@ import java.util.List;
 
 public class EpreuvesDaoImpl implements EpreuvesDAO {
 
-    private static final String SELECT_ALL_NOTES_QUERY = "SELECT n.id as note_id, n.nom as note_nom, n.created_at as note_created_at, n.content as note_content FROM note n ORDER BY n.created_at DESC";
-    private static final String SELECT_ONE_EPREUVE_QUERY = "SELECT e.idEpreuve as epreuve_id, e.dateDebutValidite as epreuve_dateDebut, e.dateFinValidite as epreuve_dateFin, e.tempsEcoule as epreuve_temps, e.note_obtenu as epreuve_note, e.niveau_obtenu as epreuve_niveau, e.etat as epreuve_etat FROM epreuve e where e.id = ?";
+    private static final String SELECT_ALL_EPREUVE_QUERY = "SELECT e.idEpreuve as epreuve_id, e.dateDebutValidite as epreuve_dateDebut, e.dateFinValidite as epreuve_dateFin, e.tempsEcoule as epreuve_temps, e.note_obtenu as epreuve_note, e.niveau_obtenu as epreuve_niveau, e.etat as epreuve_etat FROM epreuve e";
+    private static final String SELECT_ONE_EPREUVE_QUERY = "SELECT e.idEpreuve as epreuve_id, e.dateDebutValidite as epreuve_dateDebut, e.dateFinValidite as epreuve_dateFin, e.tempsEcoule as epreuve_temps, e.note_obtenu as epreuve_note, e.niveau_obtenu as epreuve_niveau, e.etat as epreuve_etat FROM epreuve e where e.idEpreuve = ?";
     private static final String SELECT_ONE_NOTE_BY_NAME_QUERY = "SELECT n.id FROM note n where n.nom = ?";
     private static final String INSERT_EPREUVE_QUERY = "INSERT INTO epreuves(dateDebutValidite, dateFinValidite,tempsEcoule, note_obtenu, niveau_obtenu, etat) VALUES (?, ?, ?, ?, ?, ?)";
     private static final String DELETE_NOTE_QUERY = "DELETE FROM note WHERE id = ?";
@@ -113,7 +113,7 @@ public class EpreuvesDaoImpl implements EpreuvesDAO {
         try {
             connection = MSSQLConnectionFactory.get();
             statement = connection.createStatement();
-            resultSet = statement.executeQuery(SELECT_ALL_NOTES_QUERY);
+            resultSet = statement.executeQuery(SELECT_ALL_EPREUVE_QUERY);
 
             while (resultSet.next()) {
                 list.add(resultSetToEpreuves(resultSet));
