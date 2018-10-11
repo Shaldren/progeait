@@ -1,7 +1,6 @@
 package dal.dao.impl;
 
 import bo.Questions;
-import bo.Themes;
 import dal.dao.QuestionsDAO;
 import dal.exception.DaoException;
 import fr.eni.tp.web.common.dal.factory.MSSQLConnectionFactory;

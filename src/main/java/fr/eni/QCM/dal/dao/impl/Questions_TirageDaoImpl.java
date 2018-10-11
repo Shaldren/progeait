@@ -1,7 +1,6 @@
 package dal.dao.impl;
 
 import bo.Questions_Tirage;
-import bo.Tests;
 import dal.dao.Questions_TirageDAO;
 import dal.exception.DaoException;
 import fr.eni.tp.web.common.dal.factory.MSSQLConnectionFactory;

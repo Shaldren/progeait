@@ -1,7 +1,5 @@
 package dal.dao.impl;
 
-import bo.Sections_Test;
-import bo.Tests;
 import bo.Themes;
 import dal.dao.ThemesDAO;
 import dal.exception.DaoException;
